@@ -32,6 +32,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+// $routes->get('/', 'NamesCrud::index');
+
 
 $routes->get('namelist', 'NamesCrud::index');
 $routes->get('addname', 'NamesCrud::create');
@@ -39,7 +41,8 @@ $routes->post('submit-form', 'NamesCrud::store');
 $routes->get('editnames/(:num)', 'NamesCrud::singleUser/$1');
 $routes->post('update', 'NamesCrud::update');
 $routes->get('delete/(:num)', 'NamesCrud::delete/$1');
-
+$routes->get('leads', 'Home::test');
+// $routes->get('secondtest', 'Home::test2');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

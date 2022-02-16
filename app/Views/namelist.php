@@ -51,6 +51,7 @@
     <div class="d-flex justify-content-end">
         <a href="<?php echo site_url('/addname') ?>" class="btn btn-primary">Add a Name & email</a>
 	</div>
+  
     <?php
      if(isset($_SESSION['msg'])){
         echo $_SESSION['msg'];
@@ -63,6 +64,8 @@
              <th>User Id</th>
              <th>Name</th>
              <th>Email</th>
+             <th>Created At</th>
+             <th>Update At</th>
              <th>Action</th>
           </tr>
        </thead>
@@ -73,6 +76,8 @@
              <td><?php echo $user['id']; ?></td>
              <td><?php echo $user['name']; ?></td>
              <td><?php echo $user['email']; ?></td>
+             <td><?php $createdate= date_create($user['created_at']); echo date_format($createdate,"dS/F/Y g:i:s A"); ?></td>
+             <td><?php if ($user['update_at']=='') {echo "Not Yet Updated";}else{$updatedate= date_create($user['update_at']); echo date_format($updatedate,"dS/F/Y g:i:s A");} ?></td>
              <td>
               <a href="<?php echo base_url('editnames/'.$user['id']);?>" class="button button1">Edit</a>
               <a href="<?php echo base_url('delete/'.$user['id']);?>" class="button button2">Delete</a>
