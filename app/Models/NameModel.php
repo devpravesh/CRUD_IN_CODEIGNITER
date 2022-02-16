@@ -8,5 +8,5 @@ class NameModel extends Model
 
     protected $primaryKey = 'id';
     
-    protected $allowedFields = ['name', 'email'];
+    protected $allowedFields = ['name', 'email', 'created_at','update_at'];
 }
