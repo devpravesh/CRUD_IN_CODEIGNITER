@@ -10,11 +10,14 @@ class Home extends BaseController
     }
     public function test()
     {
-        return view('leads');
+        return view('enq');
     }
     public function test2()
     {
         return view('Output');
     }
-    
+    public function masterlead()
+    {
+        return view('masterlead');
+    }
 }

@@ -1,3 +1,7 @@
+<?php
+echo view('sidebar');
+?>
+<section>
 <!doctype html>
 <html lang="en">
   <head>
@@ -99,4 +103,4 @@
   } );
 </script>
 </body>
-</html>
+</html></section>

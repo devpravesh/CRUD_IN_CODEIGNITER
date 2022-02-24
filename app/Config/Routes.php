@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 // $routes->get('/', 'NamesCrud::index');
 
 
@@ -41,8 +41,20 @@ $routes->post('submit-form', 'NamesCrud::store');
 $routes->get('editnames/(:num)', 'NamesCrud::singleUser/$1');
 $routes->post('update', 'NamesCrud::update');
 $routes->get('delete/(:num)', 'NamesCrud::delete/$1');
-$routes->get('leads', 'Home::test');
-// $routes->get('secondtest', 'Home::test2');
+
+$routes->get('leads', 'NamesCrud::index2');
+
+
+
+////Project Route////////
+
+$routes->get('enq', 'Home::test');
+$routes->get('masterlead','Home::masterlead');
+$routes->get('/', 'ProjectController::index');
+$routes->post('submit-project', 'ProjectController::store');
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

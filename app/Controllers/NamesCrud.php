@@ -10,6 +10,13 @@ class NamesCrud extends Controller
         $NameModel = new NameModel();
         $data['users'] = $NameModel->orderBy('id', 'DESC')->findAll();
         return view('namelist', $data);
+        
+    }
+    public function index2(){
+        $NameModel = new NameModel();
+        $data['users'] = $NameModel->orderBy('id', 'DESC')->findAll();
+        return view('leads', $data);
+        
     }
 
     // add name form
@@ -26,7 +33,7 @@ class NamesCrud extends Controller
             'email'  => $request->getVar('email'),
         ];
         $NameModel->insert($data);
-        return $this->response->redirect(site_url('/namelist'));
+        return $this->response->redirect(site_url('/leads'));
     }
 
     // show single name
@@ -46,13 +53,13 @@ class NamesCrud extends Controller
             'email'  => $request->getVar('email'),
         ];
         $NameModel->update($id, $data);
-        return $this->response->redirect(site_url('/namelist'));
+        return $this->response->redirect(site_url('/leads'));
     }
  
     // delete name
     public function delete($id = null){
         $NameModel = new NameModel();
         $data['user'] = $NameModel->where('id', $id)->delete($id);
-        return $this->response->redirect(site_url('/namelist'));
+        return $this->response->redirect(site_url('/leads'));
     }    
 }
