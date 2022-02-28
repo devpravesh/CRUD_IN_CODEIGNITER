@@ -24,4 +24,5 @@ class ProjectController extends BaseController
         $ProjectModel->insert($data);
         return $this->response->redirect(site_url('/'));
     }
+   
 }

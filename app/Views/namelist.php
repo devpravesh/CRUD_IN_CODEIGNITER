@@ -47,9 +47,6 @@ echo view('sidebar');
         color: white;
     }
 
-
-
-
 </style>
 
     <div class="d-flex justify-content-end">

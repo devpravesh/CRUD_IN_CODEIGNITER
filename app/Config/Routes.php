@@ -50,8 +50,11 @@ $routes->get('leads', 'NamesCrud::index2');
 
 $routes->get('enq', 'Home::test');
 $routes->get('masterlead','Home::masterlead');
+$routes->get('attributes','Home::attributes');
 $routes->get('/', 'ProjectController::index');
 $routes->post('submit-project', 'ProjectController::store');
+$routes->post('submit-attributes', 'Home::insertattributes');
+$routes->get('deletelead/(:num)', 'Home::Deletelead/$1');
 
 
 

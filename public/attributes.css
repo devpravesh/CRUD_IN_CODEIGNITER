@@ -1,0 +1,77 @@
+.input-box {
+    margin: 15px 0;
+}
+
+.input-box input {
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #999;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid #17a2b8;
+    color: #fff;
+    background-color: #17a2b8;
+}
+
+.btn:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.input-box a {
+    color: red;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+:disabled {
+    background: #808080;
+    color: white;
+}
+
+.input-box a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #fd0707;
+}
+
+.button2:hover {
+    background-color: #ff042d;
+    color: white;
+}

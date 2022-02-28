@@ -57,14 +57,14 @@ if (isset($_POST["input_name"]) && is_array($_POST["input_name"])){
 
   <h4>Dynamically add or remove input fields</h4>
 
-  <form method="post">
+  <form method="post" action="">
     <div class="wrapper">
       <div class="input-box">
         <input type="text" name="input_name[]">
         <button class="btn add-btn">Add More</button>
       </div>
     </div>
-    <input type="submit" class="btn" value="Submit" />
+    <input type="submit" class="btn" value="Submit"/>
   </form>
 
   <script type="text/javascript">
@@ -96,7 +96,6 @@ if (isset($_POST["input_name"]) && is_array($_POST["input_name"])){
         $(this).parent('div').remove();  // remove input field
         x--; // decrement the counter
       })
-
     });
   </script>
   </section>

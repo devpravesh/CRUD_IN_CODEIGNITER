@@ -31,11 +31,11 @@
         <i class="fas fa-stream"></i>
         <span>Master Leads</span>
       </a>
-      <a href="#">
-         <i class="fas fa-calendar"></i>
-        <span>Events</span>
+      <a href="attributes">
+         <i class="fas fa-plus"></i>
+        <span>Add Attributes</span>
       </a>
-      <a href="#">
+      <a href="enq">
         <i class="far fa-question-circle"></i>
         <span>About</span>
       </a>
